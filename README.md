@@ -10,9 +10,9 @@ Please follow the instructions below and fill in the information requested when 
 
 |               | Information   |
 |:-------------:|:-------------:|
-| Student Name  | name-here     |
-| Student ID    | id-here       |
-| Student Email | email-here    |
+| Student Name  | Aaron Carlson     |
+| Student ID    | 921241630       |
+| Student Email | acarlson8@mail.sfsu.edu    |
 
 
 
