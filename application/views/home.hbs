@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="public/js/homePage.js"></script>
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://www.teahub.io/photos/full/290-2904393_blue-lines-4k-material-design-creative-geometric-high.jpg");
+            background-size: cover;
+            background-color: #cccccc;
+        }
+
+        button {
+            position: fixed;
+            right: 0;
+            left: 0;
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+            display: inline-block;
+            margin: 20px;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid
+            transparent;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #items-count {
+            text-align: center;
+        }
+
+        #photo-storage {
+            width: 800px;
+            margin: auto;
+            display: grid;
+            gap: 8px 8px;
+            justify-items: center;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(4, 300px);
+            grid-auto-columns: 200px;
+            grid-auto-rows: 300px;
+        }
+
+        #photo-storage>div {
+            background-color: #ffffff;
+            box-shadow: 5px 10px;
+        }
+
+        #photo-text {
+            font-size: x-large;
+        }
+
+        .fadeElement {
+            animation: fadeOut 0.1s linear forwards;
+        }
+        
+        @keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;} 
+        } 
+    </style>
+</head>
+<body>
+    <h1 id ="items-count">
+    </h1>
+    <button id="getphotos" type="button">Get Photos </button>
+    <div id="photo-storage">
+    </div>
+</body>
+</html>
