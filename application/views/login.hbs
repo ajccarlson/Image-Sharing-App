@@ -7,22 +7,29 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="grid-container shadow">
-        <header>
-            <h1>Login Form</h1>
-        </header>
-        <form class="site-content">
-            <label for="username" class="text_label">Username </label>
-            <input id="username" class="text_input" type="text" placeholder="Username" required/>
-            <!--<br/>-->
+    <nav id="nav-bar">
+        <a href="/postimage">Post</a>
+        <a href="/login">Log in</a>
+    </nav>
+    
+    <div id="main-content">
+        <div class="grid-container shadow">
+            <header>
+                <h1>Login Form</h1>
+            </header>
+            <form class="site-content">
+                <label for="username" class="text_label">Username </label>
+                <input id="username" class="text_input" type="text" placeholder="Username" required/>
+                <!--<br/>-->
 
-            <label for="password" class="text_label">Password </label>
-            <input id="password" class="text_input" type="password" placeholder="Password" required/>
-            <!--<br/>-->
+                <label for="password" class="text_label">Password </label>
+                <input id="password" class="text_input" type="password" placeholder="Password" required/>
+                <!--<br/>-->
 
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </form>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
