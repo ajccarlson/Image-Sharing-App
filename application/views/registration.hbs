@@ -1,64 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="public/css/form.css">
-    <title>Registration</title>
-</head>
-<body>
-    <nav id="nav-bar">
-        <a href="/postimage">Post</a>
-        <a href="/login">Log in</a>
-    </nav>
-    
-    <div id="main-content">
-        <div class="grid-container shadow">
-            <header>
-                <h1>Registration Form</h1>
-            </header>
-                <form class="site-content">
-                    <label for="username" class="text_label">Username</label>
-                    <input id="username" class="text_input" type="text" placeholder="Username" autocomplete = "off"/>
-                    <br/> 
-                    <span id="username_error" class="error" aria-live="polite"></span>
-                    <!--<br/>-->
+<div id="main-content">
+    <div class="grid-container shadow">
+        <header>
+            <h1>Registration Form</h1>
+        </header>
+            <form class="site-content">
+                <label for="username" class="text_label">Username</label>
+                <input id="username" class="text_input" type="text" placeholder="Username" autocomplete = "off"/>
+                <br/> 
+                <span id="username_error" class="error" aria-live="polite"></span>
+                <!--<br/>-->
 
-                    <label for="email" class="text_label">Email</label>
-                    <input id="email" class="text_input" type="text" placeholder="Email" autocomplete = "off"/>
-                    <br/> 
-                    <span id="email_error" class="error" aria-live="polite"></span>
-                    <!--<br/>-->
+                <label for="email" class="text_label">Email</label>
+                <input id="email" class="text_input" type="text" placeholder="Email" autocomplete = "off"/>
+                <br/> 
+                <span id="email_error" class="error" aria-live="polite"></span>
+                <!--<br/>-->
 
-                    <label for="password" class="text_label">Password</label>
-                    <input id="password" class="text_input" type="password" placeholder="Password" autocomplete = "off"/>
-                    <br/> 
-                    <span id="password_error" class="error" aria-live="polite"></span>
-                    <!--<br/>-->
+                <label for="password" class="text_label">Password</label>
+                <input id="password" class="text_input" type="password" placeholder="Password" autocomplete = "off"/>
+                <br/> 
+                <span id="password_error" class="error" aria-live="polite"></span>
+                <!--<br/>-->
 
-                    <label for="confirm_password" class="text_label">Confirm Password</label>
-                    <input id="confirm_password" class="text_input" type="password" placeholder="Confirm Password" autocomplete = "off"/>
-                    <br/> 
-                    <span id="confirm_password_error" class="error" aria-live="polite"></span>
-                    <!--<br/>-->
+                <label for="confirm_password" class="text_label">Confirm Password</label>
+                <input id="confirm_password" class="text_input" type="password" placeholder="Confirm Password" autocomplete = "off"/>
+                <br/> 
+                <span id="confirm_password_error" class="error" aria-live="polite"></span>
+                <!--<br/>-->
 
-                    <div class="wide-content">
-                        <input id="check_age" class="check_label" type="checkbox" required/>
-                        <label for="check_age" class="text_input">I confirm that I am at least 13 years of age</label>
-                    </div>  
-                    <br/> 
+                <div class="wide-content">
+                    <input id="check_age" class="check_label" type="checkbox" required/>
+                    <label for="check_age" class="text_input">I confirm that I am at least 13 years of age</label>
+                </div>  
+                <br/> 
 
-                    <div class="wide-content">
-                        <input id="TOS" class="check_input" type="checkbox" required/>
-                        <label for="TOS" class="check_label">I accept the <a href="#">Terms of Service</a> and <a href="#">Privacy Rules</a></label>
-                    </div>
-                    <br/>
+                <div class="wide-content">
+                    <input id="TOS" class="check_input" type="checkbox" required/>
+                    <label for="TOS" class="check_label">I accept the <a href="#">Terms of Service</a> and <a href="#">Privacy Rules</a></label>
+                </div>
+                <br/>
 
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </form>
-        </div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
     </div>
-    <script type = "text/javascript" src = "public/js/formValidation.js"></script>
-</body>
-</html>
+</div>
+<script type = "text/javascript" src = "public/js/formValidation.js"></script>

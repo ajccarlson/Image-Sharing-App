@@ -1,47 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="public/css/form.css">
-    <title>Post Image</title>
-</head>
-<body>
-    <nav id="nav-bar">
-        <a href="/postimage">Post</a>
-        <a href="/login">Log in</a>
-    </nav>
-    
-    <div id="main-content">
-        <div class="grid-container shadow">
-            <header>
-                <h1>Post Image</h1>
-            </header>
-            <form class="site-content">
-                <label for="post_title" class="text_label">Post Title</label>
-                <input  id="post_title" class="text_input" type="text" placeholder="Post Title" required/>
-                <!--<br/>-->
+<div id="main-content">
+    <div class="grid-container shadow">
+        <header>
+            <h1>Post Image</h1>
+        </header>
+        <form class="site-content">
+            <label for="post_title" class="text_label">Post Title</label>
+            <input  id="post_title" class="text_input" type="text" placeholder="Post Title" required/>
+            <!--<br/>-->
 
-                <label for="post_description" class="text_label">Post Description</label>
-                <input id="post_description" class="text_input" type="text" placeholder="Post Description"/>
-                <!--<br/>-->
-                
-                <div class="wide-content">
-                    <label for="upload">Upload Image</label>
-                    <input id="upload" class="text_input" type="file" required/>
-                </div>
-                <br/>
+            <label for="post_description" class="text_label">Post Description</label>
+            <input id="post_description" class="text_input" type="text" placeholder="Post Description"/>
+            <!--<br/>-->
+            
+            <div class="wide-content">
+                <label for="upload">Upload Image</label>
+                <input id="upload" class="text_input" type="file" required/>
+            </div>
+            <br/>
 
-                <div class="wide-content">
-                    <input id="TOS" class="check_input" class="text_label" type="checkbox" required/>
-                    <label for="TOS" class="check_label">I accept the <a href="#">Acceptable Use Policy</a> for uploading images</label>
-                </div>
-                <br/>
+            <div class="wide-content">
+                <input id="TOS" class="check_input" class="text_label" type="checkbox" required/>
+                <label for="TOS" class="check_label">I accept the <a href="#">Acceptable Use Policy</a> for uploading images</label>
+            </div>
+            <br/>
 
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-            </form>
-        </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
     </div>
-</body>
-</html>
+</div>
