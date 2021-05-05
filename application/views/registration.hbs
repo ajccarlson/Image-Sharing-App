@@ -3,27 +3,28 @@
         <header>
             <h1>Registration Form</h1>
         </header>
-            <form class="site-content">
+            <form class="site-content" method="POST" action="/users/register"
+            enctype="application/x-www-form-urlencoded">
                 <label for="username" class="text_label">Username</label>
-                <input id="username" class="text_input" type="text" placeholder="Username" autocomplete = "off"/>
+                <input id="username" class="text_input" type="text" placeholder="Username" name="username" autocomplete = "off"/>
                 <br/> 
                 <span id="username_error" class="error" aria-live="polite"></span>
                 <!--<br/>-->
 
                 <label for="email" class="text_label">Email</label>
-                <input id="email" class="text_input" type="text" placeholder="Email" autocomplete = "off"/>
+                <input id="email" class="text_input" type="text" placeholder="Email" name="email" autocomplete = "off"/>
                 <br/> 
                 <span id="email_error" class="error" aria-live="polite"></span>
                 <!--<br/>-->
 
                 <label for="password" class="text_label">Password</label>
-                <input id="password" class="text_input" type="password" placeholder="Password" autocomplete = "off"/>
+                <input id="password" class="text_input" type="password" placeholder="Password" name="password" autocomplete = "off"/>
                 <br/> 
                 <span id="password_error" class="error" aria-live="polite"></span>
                 <!--<br/>-->
 
                 <label for="confirm_password" class="text_label">Confirm Password</label>
-                <input id="confirm_password" class="text_input" type="password" placeholder="Confirm Password" autocomplete = "off"/>
+                <input id="confirm_password" class="text_input" type="password" placeholder="Confirm Password" name="cpassword" autocomplete = "off"/>
                 <br/> 
                 <span id="confirm_password_error" class="error" aria-live="polite"></span>
                 <!--<br/>-->
