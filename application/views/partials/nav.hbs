@@ -1,5 +1,10 @@
 <nav id="nav-bar">
     <a class="nav-bar-logo" href="/home"><img id="home-icon" src="public/images/Home_1.png" alt="Home"></a>
     <a class="nav-bar-text" href="/postimage">Post</a>
+    
+    {{#if logged}}
+    <a class="nav-bar-text" href="/logout">Log Out</a>
+    {{else}}
     <a class="nav-bar-text" href="/login">Log in</a>
+    {{/if}}
 </nav>
