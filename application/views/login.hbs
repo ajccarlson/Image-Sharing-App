@@ -3,13 +3,13 @@
         <header>
             <h1>Login Form</h1>
         </header>
-        <form class="site-content">
+        <form class="site-content" method="POST" action="/users/login" enctype="application/x-www-form-urlencoded">
             <label for="username" class="text_label">Username </label>
-            <input id="username" class="text_input" type="text" placeholder="Username" required/>
+            <input id="username" class="text_input" type="text" placeholder="Username" name="username" required/>
             <!--<br/>-->
 
             <label for="password" class="text_label">Password </label>
-            <input id="password" class="text_input" type="password" placeholder="Password" required/>
+            <input id="password" class="text_input" type="password" placeholder="Password" name="password" required/>
             <!--<br/>-->
 
             <button type="submit">Submit</button>

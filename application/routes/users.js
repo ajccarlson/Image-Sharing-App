@@ -72,4 +72,38 @@ router.post('/register', (req, res, next) => {
   });
 });
 
+router.post('/login', (req, res, next) => {
+  let username = req.body.username;
+  let password = req.body.password;
+
+  /*
+  * do server side validation
+  * not done in video must do on your own
+  */
+
+  let baseSQL = "SELECT username, password FROM users WHERE username=? AND password=?;"
+  db.execute(baseSQL, [username, password])
+  .then(([results, fields]) => {
+    if (results && results.length == 1) {
+      successPrint(`User ${username} is logged in`);
+      res.locals.logged = true;
+      res.render('index');
+    }
+    else {
+      throw new UserError("Invalid username and/or password!", "/login", 200);
+    }
+  })
+  .catch((err) => {
+    errorPrint("user login failed");
+    if (err instanceof UserError) {
+      errorPrint(err.getMessage());
+      res.status(err.getStatus());
+      res.redirect('/login');
+    }
+    else {
+      next(err)
+    }
+  })
+})
+
 module.exports = router;
