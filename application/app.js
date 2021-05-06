@@ -23,6 +23,9 @@ app.engine(
         extname: ".hbs",
         defaultLayout: "home",
         helpers: {
+            emptyObject: (obj) => {
+                return !(obj.constructor === Object && Object.keys(obj).length ==0)
+            }
             /**
              * if you need more helpers you can
              * register them here
@@ -57,7 +60,7 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-    //console.log(req.session);
+    console.log(req.session);
     if (req.session.username) {
         res.locals.logged = true;
     }

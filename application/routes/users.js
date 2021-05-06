@@ -102,7 +102,9 @@ router.post('/login', (req, res, next) => {
       req.session.userId = userId;
       res.locals.logged = true;
       req.flash('success', 'You have been successfully logged in!');
-      res.redirect('/');
+      req.session.save( err => {
+        res.redirect('/');
+      });
     }
     else {
       throw new UserError("Invalid username and/or password!", "/login", 200);
@@ -114,7 +116,9 @@ router.post('/login', (req, res, next) => {
       errorPrint(err.getMessage());
       req.flash('error', err.getMessage());
       res.status(err.getStatus());
-      res.redirect('/login');
+      req.session.save( err => {
+        res.redirect('/login');
+      });
     }
     else {
       next(err)
