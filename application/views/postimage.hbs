@@ -3,17 +3,17 @@
         <header>
             <h1>Post Image</h1>
         </header>
-        <form class="site-content">
+        <form id="post-image" class="site-content" method="POST" enctype="multipart/form-data" action="/posts/createPost">
             <label for="post_title" class="text_label">Post Title</label>
-            <input  id="post_title" class="text_input" type="text" placeholder="Post Title" required/>
+            <input  id="post_title" class="text_input" type="text" placeholder="Post Title" name="title" required/>
             <!--<br/>-->
 
             <label for="post_description" class="text_label">Post Description</label>
-            <input id="post_description" class="text_input" type="text" placeholder="Post Description"/>
+            <input id="post_description" class="text_input" type="text" placeholder="Post Description" name="description" required/>
             <!--<br/>-->
             
             <label for="upload" class="text_label">Upload Image</label>
-            <input id="upload" type="file" required/>
+            <input id="upload" type="file" name="uploadImage" required/>
 
             <div class="wide-content">
                 <input id="TOS" class="check_input" class="text_label" type="checkbox" required/>
