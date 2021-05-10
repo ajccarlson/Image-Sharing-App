@@ -13,7 +13,7 @@ body {
     background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/background-of-repeating-geometric-rhombs_GkIQK2cO_thumb.jpg");
     background-size: initial;
     margin: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #cccccc;
 }
 
@@ -134,6 +134,48 @@ header {
 #home-icon {
     width:23px;
     height:23px;
+}
+
+
+.search {
+    float: right;
+    padding-right: 4px;
+}
+
+#search-bar {
+    padding: 6px;
+    font-size: 17px;
+    text-align: left;
+    border: 1px solid grey;
+    width: 300px;
+    background: #f1f1f1;
+}
+
+#search-button {
+    margin-top: 6px;
+    width: 35px;
+    height: 35px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+#search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#search-button:hover {
+    background: #0b7dda;
+}
+
+#search-button:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
