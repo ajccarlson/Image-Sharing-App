@@ -142,8 +142,8 @@ header {
     padding-right: 4px;
 }
 
-#search-bar {
-    padding: 6px;
+#search-text {
+    padding: 7px;
     font-size: 17px;
     text-align: left;
     border: 1px solid grey;
@@ -152,20 +152,15 @@ header {
 }
 
 #search-button {
-    margin-top: 6px;
-    width: 35px;
-    height: 35px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: -.3em;
     background: #2196F3;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
-}
-
-#search-icon {
-    width: 20px;
-    height: 20px;
 }
 
 #search-button:hover {
@@ -265,6 +260,59 @@ div[class=card-body] > a[class=card-button] {
 
 
 
+#image-post-date {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: x-large;
+    margin-left: .4rem;
+    margin-right: .4rem;
+}
+
+#image-post-desc {
+    grid-area: 3 / 1 / 4 / 3;
+    justify-self: stretch;
+    align-self: stretch;
+    font-size: large;
+    margin-left: .4rem;
+    margin-right: .4rem;
+}
+
+/*#comment-box-title {
+
+}*/
+
+#comment-box {
+    padding: .45rem;
+    display: flex;
+    background-color: #232f3e;
+}
+
+#comment-box-text {
+    flex-grow: 8;
+    padding: .25rem;
+    margin: .25rem;
+    border: .0625rem solid white;
+    border-radius: .35rem;
+    background-color: white;
+    resize: none;
+}
+
+#comment-box-button {
+    padding: .25rem;
+    margin: .25rem;
+    line-height: 2;
+    background-color: #232f3e;
+    color: white;
+    font-size: 1.5rem;
+    border: .0625rem solid white;
+    border-radius: .35rem;
+}
+
+#comment-box-button:hover {
+    background-color: white;
+    color: #232f3e;
+}
+
+
 input:invalid{
     border-color: #900;
     background-color: #FDD;
@@ -324,6 +372,12 @@ input:focus:invalid {
     color: #3c763d;
 }
 
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+
 .alert-warning {
     background-color: #fcf8e3;
     border-color: #faebcc;
@@ -341,6 +395,7 @@ input:focus:invalid {
     left: 50%;
     top: 16%;
     transform: translate(-50%, 0);
+    z-index: 9999;
 }
 
 #flash-message div {
