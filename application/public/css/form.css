@@ -387,8 +387,7 @@ div[post-container] > imd[id^=post-] {
 }
 
 #messages {
-    background-color: #7e94af;
-    color: white;
+    background-color: white;
     grid-area: messages;
     overflow-y: auto;
     display: flex;
