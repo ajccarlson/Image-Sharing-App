@@ -4,8 +4,8 @@
 }
 
 .shadow {
-    border: 3px solid #cccccc;
-    box-shadow: 0 2px 2px #a7a7a7;
+    border-top: 2px solid rgb(255 210 64 / 75%) !important;
+    border-left: 2px solid rgb(255 210 64 / 75%) !important;
 }
 
 body {
@@ -52,23 +52,56 @@ body {
 header {
     color: white;
     padding: 1rem;
-    background-color: #134426d0;
+    background-color: #903333;
     grid-area: 1 / 1 / 2 / 3;
 }
 
 .site-content {
-    background-color: rgb(233, 226, 224);
-    border-top: 3px solid #dfdfdf;
+    background-color: #232f3e;
+    color: white;
+    border-top: 1px solid #dfdfdf;
     grid-area: 2 / 1 / 3 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    /*grid-auto-rows: 1fr;*/
+    /* grid-auto-rows: 1fr; */
     grid-auto-columns: 1fr;
-    /*justify-items: center;
-    align-items: center;*/
     padding-top: .5rem;
+    padding-bottom: .5rem;
     gap: 10px;
+}
+
+.wide-content {
+    grid-column: span 2;
+}
+
+.form-label {
+    margin: auto;
+}
+
+.form-input {
+    text-decoration: none;
+    line-height: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.form-button {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #232f3e;
+    line-height: 2rem;
+    border: .0625rem solid white;
+    border-radius: .25rem;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    padding-bottom: .25rem;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .post-content {
@@ -77,13 +110,12 @@ header {
     grid-area: 2 / 1 / 3 / 3;
 }
 
-.check_label {
-    justify-self: right;
-    margin-top: 6px;
-}
-
-.text_label {
-    margin: auto;
+#post-image-upload {
+    text-decoration: none;
+    line-height: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #6c757d;
 }
 
 
@@ -211,9 +243,12 @@ header {
     display: grid;
     grid-template-rows: 240px 150px;
     grid-template-columns: auto;
-    border: .0625rem solid #cccccc;
+    background: none !important;
+    border: none !important;
+    border-top: 2px solid rgb(255 210 64 / 75%) !important;
+    border-left: 2px solid rgb(255 210 64 / 75%) !important;
     border-radius: .25rem;
-    box-shadow: 0 2px 2px #dfdede;
+    /*box-shadow: 0 2px 2px #dfdede;*/
 }
 
 .card-image {
@@ -258,6 +293,12 @@ div[class=card-body] > a[class=card-button] {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-size: small;
+    font-style: italic;
+    border-top: 1px solid #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #903333;
 }
 
 .anchor-buttons {
@@ -312,47 +353,49 @@ div[post-container] > imd[id^=post-] {
     flex-shrink: 1;
 }
 
-#post-info {
-    background-color: white;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#post-title {
-    background-color: white;
-    border-bottom: 1px solid #000000;
-    padding-bottom: 5px;
-}
-
-#post-author {
-    color: blue;
-    font-weight: bold;
-}
-
-#post-description {
-    background-color: white;
-    border-top: 1px solid #000000;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
 #photo-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: -2px -2px 4px 4px rgba(219, 96, 59, 0.726);
+    box-shadow: -2px -2px 4px 4px rgb(255 210 64 / 75%);
     grid-area: photoinfo;
 }
 
-#messages {
+#post-title {
+    background-color: #232f3e;
+    padding-bottom: 5px;
+    color: white;
+}
+
+#post-info {
     background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+}
+
+#post-author {
+    color: #0066ff;
+    font-weight: bold;
+}
+
+#post-description {
+    background-color: #903333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+#messages {
+    background-color: #7e94af;
+    color: white;
     grid-area: messages;
     overflow-y: auto;
     display: flex;
     flex-flow: column-reverse nowrap;
     scroll-behavior: smooth;
     border: 1px solid #cccccc;
-    box-shadow: -2px -2px 4px 4px rgba(219, 96, 59, 0.726);
+    box-shadow: -2px -2px 4px 4px rgb(255 210 64 / 75%);
     border-radius: .35rem;
     max-height: 75vh;
 }
@@ -375,7 +418,7 @@ div[id^=message-] {
 .author-text {
     grid-area: author;
     justify-self: start;
-    color: blue;
+    color: #0066ff;
 }
 
 #comment-container {
@@ -472,28 +515,15 @@ input:focus:invalid {
     outline: none;
 }
 
-/*.error {
-    width  : 100%;
-    padding: 0;
-
-    font-size: 80%;
-    color: white;
-    background-color: #900;
-    border-radius: 0 0 5px 5px;
-
-    box-sizing: border-box;
-}*/
+.error {
+    line-height: 1 !important;
+}
 
 .error.active {
-    width  : 100%;
-    padding: 0;
-
     font-size: 80%;
     color: white;
     background-color: #900;
     border-radius: 0 0 5px 5px;
-
-    box-sizing: border-box;
 }
 
 #flash-message {

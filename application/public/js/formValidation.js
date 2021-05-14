@@ -1,19 +1,19 @@
 const form = document.getElementsByTagName('form')[0];
 
 const formUsername = document.getElementById('username');
-const usernameError = document.getElementById('username_error');
+const usernameError = document.getElementById('username-error');
 let usernameReturnValue = '';
 
 const formEmail = document.getElementById('email');
-const emailError = document.getElementById('email_error');
+const emailError = document.getElementById('email-error');
 let emailReturnValue = '';
 
 const formPassword = document.getElementById('password');
-const passwordError = document.getElementById('password_error');
+const passwordError = document.getElementById('password-error');
 let passwordReturnValue = '';
 
-const formConfirmPassword = document.getElementById('confirm_password');
-const confirmPasswordError = document.getElementById('confirm_password_error');
+const formConfirmPassword = document.getElementById('confirm-password');
+const confirmPasswordError = document.getElementById('confirm-password-error');
 
 
 

@@ -4,25 +4,24 @@
             <h1>Post Image</h1>
         </header>
         <form id="post-image" class="site-content" method="POST" enctype="multipart/form-data" action="/posts/createPost">
-            <label for="post_title" class="text_label">Post Title</label>
-            <input  id="post_title" class="text_input" type="text" placeholder="Post Title" name="title" required/>
+            <label for="post-image-title" class="form-label">Post Title</label>
+            <input  id="post-image-title" class="form-input" type="text" placeholder="Post Title" name="title" required/>
             <!--<br/>-->
 
-            <label for="post_description" class="text_label">Post Description</label>
-            <input id="post_description" class="text_input" type="text" placeholder="Post Description" name="description" required/>
+            <label for="post-image-description" class="form-label">Post Description</label>
+            <input id="post-image-description" class="form-input" type="text" placeholder="Post Description" name="description" required/>
             <!--<br/>-->
             
-            <label for="upload" class="text_label">Upload Image</label>
-            <input id="upload" type="file" name="uploadImage" required/>
+            <label for="post-image-upload" class="form-label">Upload Image</label>
+            <input id="post-image-upload" type="file" name="uploadImage" required/>
 
             <div class="wide-content">
-                <input id="TOS" class="check_input" class="text_label" type="checkbox" required/>
-                <label for="TOS" class="check_label">I accept the <a href="#">Acceptable Use Policy</a> for uploading images</label>
+                <input id="TOS" class="check-input" class="form-label" type="checkbox" required/>
+                <label for="TOS" class="check-label">I accept the <a href="#">Acceptable Use Policy</a> for uploading images</label>
             </div>
-            <br/>
 
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <button class="form-button" type="submit">Submit</button>
+            <button class="form-button" type="reset">Reset</button>
         </form>
     </div>
 </div>
