@@ -28,14 +28,9 @@ router.post('/createPost', uploader.single("uploadImage"), (req, res, next) => {
     let description = req.body.description;
     let fk_userId = req.session.userId;
 
-    /*
-    * do server validation on your own
-    * not do in video must do on your own
-    * if any values that are used for the insert statement
-    * are undefined, mysql.query or execute will fail
-    * with the following error:
-    * BIND parameters cannot be undefined
-    */
+    if (!fileUploaded || !title || !description || !fk_userId) {
+        throw new PostError('Post could not be created!', '/postImage', 400);
+    }
 
     sharp(fileUploaded)
     .resize(200)
