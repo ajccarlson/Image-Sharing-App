@@ -103,8 +103,6 @@ function validatePassword() {
     }
     else
         passwordReturnValue = errorMessage;
-    
-    return passwordReturnValue;
 }
 
 form.addEventListener('submit', function (event) {

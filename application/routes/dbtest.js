@@ -43,7 +43,7 @@ router.post('/createUser', (req, res, next) => {
     let email = req.body.email;
     let password = req.body.password;
 
-    //validadate data, if bad send back response
+    //validate data, if bad send back response
     //res.redirect('/registration');
 
     let baseSQL = 'INSERT INTO users (username, email, password, created) VALUES (?, ?, ?, now())';
