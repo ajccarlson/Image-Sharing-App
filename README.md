@@ -13,15 +13,14 @@ Please follow the instructions below and fill in the information requested when 
 | Student Name  | Aaron Carlson     |
 | Student ID    | 921241630       |
 | Student Email | acarlson8@mail.sfsu.edu    |
+| Link to Web Application |  localhost:3000    |
 
 
 
 # Build/Run Instructions
 
 ## Build Instructions
-1. steps here
-2. steps here
+1. npm install
 
 ## Run Instructions
-1. steps here
-2. steps here 
+1. npm start
