@@ -62,7 +62,7 @@ function executeSearch() {
 
 let flashElement = document.getElementById('flash-message');
 if (flashElement) {
-    setFlashMessageFadeOut(flashMessageDElement);
+    setFlashMessageFadeOut(flashElement);
 }
 
 let searchButton = document.getElementById('search-button');

@@ -28,10 +28,6 @@ app.engine(
             emptyObject: (obj) => {
                 return !(obj.constructor === Object && Object.keys(obj).length ==0)
             }
-            /**
-             * if you need more helpers you can
-             * register them here
-             */
         }
     })
 )
@@ -62,7 +58,6 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-    //console.log(req.session);
     if (req.session.username) {
         res.locals.logged = true;
     }
@@ -76,7 +71,6 @@ app.use('/posts', postsRouter);
 app.use('/comments', commentRouter);
 
 app.use((err, req, res, next) => {
-    //errorPrint(err);
     console.log(err);
     res.render('error', {err_message: err});
 });

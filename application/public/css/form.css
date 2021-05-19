@@ -4,8 +4,11 @@
 }
 
 .shadow {
+    background: none !important;
+    border: none !important;
     border-top: 2px solid rgb(255 210 64 / 75%) !important;
     border-left: 2px solid rgb(255 210 64 / 75%) !important;
+    border-radius: .25rem;
 }
 
 body {
@@ -222,11 +225,6 @@ header {
     display: grid;
     grid-template-rows: 240px 150px;
     grid-template-columns: auto;
-    background: none !important;
-    border: none !important;
-    border-top: 2px solid rgb(255 210 64 / 75%) !important;
-    border-left: 2px solid rgb(255 210 64 / 75%) !important;
-    border-radius: .25rem;
 }
 
 .card-image {
