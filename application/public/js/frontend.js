@@ -25,7 +25,7 @@ function addFlashFromFrontEnd(message) {
 }
 
 function createCard(postData) {
-    return `<div id="post-${postData.id}" class="card">
+    return `<div id="post-${postData.id}" class="card shadow">
     <img class="card-image" src="${postData.thumbnail}" alt="Missing Image">
     <div class="card-body">
         <p class="card-title">${postData.title}</p>
