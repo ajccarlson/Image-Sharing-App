@@ -35,7 +35,7 @@ body {
     padding-left: 8%;
     padding-right: 8%;
     display: grid;
-    height: 51.7em;
+    height: 50em;
     row-gap: .8rem;
     column-gap: 1%;
     grid-template-rows: 1fr 1fr;
