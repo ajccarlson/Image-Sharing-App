@@ -12,6 +12,7 @@ pids
 *.seed
 *.pid.lock
 
+.vs
 'Git Bash.lnk'
 update.txt
 
